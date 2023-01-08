@@ -1,0 +1,19 @@
+.one-movie {
+    width: 18.75em;
+    margin: .6125em .6125em;
+    box-shadow: 0px 0px 1em 0px #03090b;
+    transition: all 0.185s linear;    
+}
+
+.one-movie:hover {
+    transform: scale(1.04);
+}
+
+h1, p {
+    padding: 0.5em;
+}
+
+img {
+    width: 100%;
+    max-height: 10em;
+}
