@@ -1,7 +1,8 @@
 .one-movie {
+    background-color: #1d2930;
     width: 18.75em;
     margin: .6125em .6125em;
-    box-shadow: 0px 0px 1em 0px #03090b;
+    box-shadow: 0px 0px .65em 0px #03090b;
     transition: all 0.185s linear;    
 }
 
