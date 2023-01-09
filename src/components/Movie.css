@@ -8,6 +8,7 @@
 
 .one-movie:hover {
     transform: scale(1.04);
+    cursor: pointer;
 }
 
 h1, h2, p {
