@@ -1,7 +1,7 @@
 .one-movie {
     background-color: #1d2930;
     width: 18.75em;
-    margin: .6125em .6125em;
+    margin: .6125em;
     box-shadow: 0px 0px .65em 0px #03090b;
     transition: all 0.185s linear;    
 }
@@ -42,5 +42,5 @@ img {
 .btn-area {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: baseline;
+    justify-content: center;
 }

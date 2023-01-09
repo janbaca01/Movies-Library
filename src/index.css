@@ -30,16 +30,13 @@ header h1 {
 .btn {
     background-color: #FFD700;
     border: none;
-    margin-right: 1em;
+    margin: .6125em;
     padding: 5px 15px;
-    width: 100%;
+    width: 45%;
     cursor: pointer;
     transition: all 0.1s linear;
 }
 
 .btn:hover {
     background-color: #d10000;
-}
-.btn:last-child {
-    margin-right: 0;
 }
