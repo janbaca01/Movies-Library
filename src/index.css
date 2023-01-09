@@ -25,8 +25,21 @@ header h1 {
     width: 90%;
     margin: 30px auto;
     margin-top: 0;
-    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+}
+
+.btn {
+    background-color: #FFD700;
+    border: none;
+    margin-right: 1em;
+    padding: 5px 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.btn:hover {
+    background-color: #d10000;
+}
+.btn:last-child {
+    margin-right: 0;
 }

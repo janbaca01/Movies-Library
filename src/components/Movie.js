@@ -1,6 +1,8 @@
 import './Movie.css'
 import data from '../Data'
 import MovieDeleteButton from './MovieDeleteButton'
+import DeleteAllMovies from './DeleteAllMovies'
+import ReloadMovies from './ReloadMovies'
 import { useState } from 'react'
 
 
@@ -14,8 +16,17 @@ const Movie = () => {
         setMovieList(filteredMovies)
     }
 
-    return (
+    const deleteMovies = () => {
+        setMovieList([])
+    }
+
+    const reloadMovies = () => {
+        setMovieList(data)
+    }
+
+    return (    
         <>
+            <section className='all-movies'>
             {
                 movieList.map( (oneMovie) => {
                     const {id, image, title, age, tags, description} = oneMovie
@@ -26,10 +37,16 @@ const Movie = () => {
                         <p>{age}</p>
                         <p>{tags}</p>
                         <p>{description}</p>
-                        <MovieDeleteButton deleteMovie={() => deleteOneMovie(id)} />
+                        <MovieDeleteButton deletemovie={() => deleteOneMovie(id)} />
                     </div>
                 })
             }
+            
+        </section>
+        <div className="btn-area">
+            <DeleteAllMovies deletemovies={() => deleteMovies()} />
+            <ReloadMovies reloadall={() => reloadMovies()} />
+        </div>
         </>
     )
 }
