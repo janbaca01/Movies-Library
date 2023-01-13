@@ -1,9 +1,10 @@
-import Movie from './components/Movie'
+// import Movie from './components/Movie'
+import MovieFromApi from './components/MovieFromApi'
 
 const App = () => {
     return (
         <>
-            <Movie />
+            <MovieFromApi />
         </>
     )
 }
