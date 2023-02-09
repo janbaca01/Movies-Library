@@ -1,10 +1,11 @@
-// import Movie from './components/Movie'
-import MovieFromApi from './components/MovieFromApi'
+import MoviesFromApi from './components/MoviesFromApi'
+import MovieDeleteButton from './components/MovieDeleteButton'
 
 const App = () => {
     return (
         <>
-            <MovieFromApi />
+            <MoviesFromApi />
+            <MovieDeleteButton />
         </>
     )
 }

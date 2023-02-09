@@ -35,9 +35,6 @@ const MovieFromApi = () => {
                 setImdbRating(movie["imdbRating"])
                 setYear(movie["Year"])
                 setActors(movie["Actors"])
-
-
-
             })
         setLoading(false) 
     }, [])
